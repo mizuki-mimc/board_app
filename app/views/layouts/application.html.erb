@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <header style="background-color: #3399ff; color: white; padding: 1em;">
+      <h1>My Blog Site</h1>
+      <nav>
+        <%= link_to "Home", posts_path, style: "color: white; margin-right: 1em;" %>
+        <%= link_to "Posts", posts_path, style: "color: white; margin-right: 1em;" %>
+        <%= link_to "New Post", new_post_path, style: "color: white;" %>
+      </nav>
+    </header>
+
     <%= yield %>
   </body>
 </html>
